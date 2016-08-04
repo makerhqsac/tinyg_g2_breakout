@@ -8,6 +8,13 @@ Order from OSHPark [Here](https://oshpark.com/shared_projects/RuvmX1Bc)
 
 [Schematic](https://github.com/makerhqsac/tinyg_g2_breakout/raw/master/tinyg_g2_breakout.pdf)
 
+This is part of an overall TinyG G2 CNC control system. 3D printable files for the enclosure, control pendant and junction box can be
+found here:
+
+* Electronics Enclosure: http://www.thingiverse.com/thing:1703914
+* Control Pendant: http://www.thingiverse.com/thing:1703922
+* Junction Box: http://www.thingiverse.com/thing:1703927
+ 
 
 Board in action:
 
