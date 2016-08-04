@@ -4537,6 +4537,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="CREATIVE_COMMONS">
+<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
+</package>
+<package name="DUMMY">
+<description>NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.</description>
+</package>
 </packages>
 <symbols>
 <symbol name="DGND">
@@ -4549,6 +4557,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="LETTER_L">
+<wire x1="0" y1="185.42" x2="248.92" y2="185.42" width="0.4064" layer="94"/>
+<wire x1="248.92" y1="185.42" x2="248.92" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="185.42" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="248.92" y2="0" width="0.4064" layer="94"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.254" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.254" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.254" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.254" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.254" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.254" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.254" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.254" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.254" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
+<text x="1.524" y="17.78" size="2.54" layer="94" font="vector">TITLE:</text>
+<text x="15.494" y="17.78" size="2.7432" layer="94" font="vector">&gt;DRAWING_NAME</text>
+<text x="2.54" y="31.75" size="1.9304" layer="94">Released under the Creative Commons</text>
+<text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 4.0 License</text>
+<text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4574,6 +4620,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FRAME-LETTER" prefix="FRAME">
+<description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
+Standard 8.5x11 US Letter frame</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
+<gate name="V" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="CREATIVE_COMMONS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO_PACKAGE" package="DUMMY">
+<technologies>
+<technology name="">
+<attribute name="DESIGNER" value="Nobody" constant="no"/>
+<attribute name="VERSION" value="v01" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4621,14 +4690,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="" value="v1"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="165.608" y="-49.53" size="3.81" layer="97">v2</text>
+<text x="88.392" y="-50.038" size="3.81" layer="97">mike@machadolab.com</text>
 </plain>
 <instances>
 <instance part="PCB1" gate="G$1" x="0" y="55.88" rot="R270"/>
-<instance part="J4" gate="G$1" x="111.76" y="-33.02"/>
+<instance part="J4" gate="G$1" x="17.78" y="-33.02"/>
 <instance part="J1" gate="G$1" x="73.66" y="86.36"/>
 <instance part="R1" gate="G$1" x="96.52" y="104.14" rot="R90"/>
 <instance part="R2" gate="G$1" x="109.22" y="104.14" rot="R90"/>
@@ -4653,11 +4725,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY2" gate="G$1" x="96.52" y="38.1"/>
 <instance part="GND2" gate="1" x="96.52" y="-10.16"/>
 <instance part="J2" gate="J$1" x="71.12" y="15.24"/>
-<instance part="J3" gate="G$1" x="71.12" y="-35.56"/>
+<instance part="J3" gate="G$1" x="-22.86" y="-35.56"/>
 <instance part="GND3" gate="1" x="-55.88" y="66.04"/>
 <instance part="GND4" gate="1" x="53.34" y="81.28"/>
 <instance part="GND5" gate="1" x="-53.34" y="0"/>
 <instance part="SUPPLY3" gate="G$1" x="-55.88" y="93.98"/>
+<instance part="FRAME1" gate="G$1" x="-73.66" y="-55.88"/>
+<instance part="FRAME1" gate="V" x="73.66" y="-55.88"/>
 </instances>
 <busses>
 </busses>
@@ -4669,8 +4743,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="30.48" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="-30.48" x2="88.9" y2="-30.48" width="0.1524" layer="91"/>
-<label x="81.28" y="-30.48" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-30.48" x2="-5.08" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-12.7" y="-30.48" size="1.778" layer="95"/>
 <pinref part="J3" gate="G$1" pin="5"/>
 </segment>
 </net>
@@ -4681,8 +4755,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="30.48" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="-33.02" x2="88.9" y2="-33.02" width="0.1524" layer="91"/>
-<label x="81.28" y="-33.02" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-33.02" x2="-5.08" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-12.7" y="-33.02" size="1.778" layer="95"/>
 <pinref part="J3" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -4848,18 +4922,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-40.64" x2="88.9" y2="-40.64" width="0.1524" layer="91"/>
-<label x="81.28" y="-40.64" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-40.64" x2="-5.08" y2="-40.64" width="0.1524" layer="91"/>
+<label x="-12.7" y="-40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="2"/>
 <pinref part="J4" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="-30.48" x2="119.38" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="-33.02" x2="129.54" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="119.38" y="-33.02"/>
-<label x="121.92" y="-33.02" size="1.778" layer="95"/>
+<wire x1="25.4" y1="-30.48" x2="25.4" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-33.02" x2="35.56" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="25.4" y="-33.02"/>
+<label x="27.94" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PCB1" gate="G$1" pin="GND..."/>
@@ -4937,8 +5011,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="30.48" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="-35.56" x2="88.9" y2="-35.56" width="0.1524" layer="91"/>
-<label x="81.28" y="-35.56" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-35.56" x2="-5.08" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-12.7" y="-35.56" size="1.778" layer="95"/>
 <pinref part="J3" gate="G$1" pin="3"/>
 </segment>
 </net>
@@ -4949,8 +5023,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="30.48" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="-38.1" x2="88.9" y2="-38.1" width="0.1524" layer="91"/>
-<label x="81.28" y="-38.1" size="1.778" layer="95"/>
+<wire x1="-15.24" y1="-38.1" x2="-5.08" y2="-38.1" width="0.1524" layer="91"/>
+<label x="-12.7" y="-38.1" size="1.778" layer="95"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -5006,10 +5080,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </sheet>
 </sheets>
 <errors>
-<approved hash="113,1,116.163,-30.2853,J4,,,,,"/>
 <approved hash="113,1,75.5227,89.0947,J1,,,,,"/>
 <approved hash="113,1,75.5227,16.7047,J2,,,,,"/>
-<approved hash="113,1,75.5227,-34.0953,J3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
