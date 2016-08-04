@@ -11,4 +11,4 @@ Order from OSHPark [Here](https://oshpark.com/shared_projects/RuvmX1Bc)
 
 Board in action:
 
-![board](https://goo.gl/photos/okmdknuzJoXGGAE26)
+![board](https://lh3.googleusercontent.com/ZGVS18AnZx9RnR5CuP4C1vQna6u9-dpSoKLnUpk9r6a5WAQZURBvastm4hQn_ACiAl_UXz3cgKgwpw=w348-h616-no)
